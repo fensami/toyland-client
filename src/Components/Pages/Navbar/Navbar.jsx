@@ -32,9 +32,9 @@ const Navbar = () => {
       <li><a>Blogs</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <Link to='registration' className="btn  btn-primary">Register</Link>
-  </div>
+  <Link to='registration'>
+  <button className="w-full py-2 px-4 bg-purple-500 text-white rounded hover:bg-purple-600" type="submit">Register</button>  
+  </Link>
 </div>
     );
 };
