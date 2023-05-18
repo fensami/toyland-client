@@ -27,7 +27,7 @@ const Registration = () => {
   }
     return (
         <div className="bg-purple-600 min-h-screen flex items-center justify-center py-12">
-      <form onSubmit={handleRegister} className="w-full max-w-sm bg-purple-100 rounded p-8" >
+      <form onSubmit={handleRegister} className="w-full max-w-sm bg-purple-200 rounded p-8" >
         <h2 className="text-2xl font-bold text-purple-500 mb-4 text-center">Registration</h2>
         <div className="mb-4">
           <label className="block mb-1 text-purple-500">Name</label>
