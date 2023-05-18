@@ -15,7 +15,7 @@ const Registration = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-1 text-purple-500" htmlFor="email">Email:</label>
+          <label className="block mb-1 text-purple-500" htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
@@ -23,7 +23,7 @@ const Registration = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-1 text-purple-500" htmlFor="password">Password:</label>
+          <label className="block mb-1 text-purple-500" htmlFor="password">Password</label>
           <input
             type="password"
             id="password"

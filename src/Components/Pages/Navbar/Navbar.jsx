@@ -33,7 +33,7 @@ const Navbar = () => {
     </ul>
   </div>
   <Link to='registration'>
-  <button className="w-full py-2 px-4 bg-purple-500 text-white rounded hover:bg-purple-600" type="submit">Register</button>  
+  <button className="w-full py-2 px-4 bg-purple-500 text-white rounded hover:bg-purple-600" type="submit">Login</button>  
   </Link>
 </div>
     );
