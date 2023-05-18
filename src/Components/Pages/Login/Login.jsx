@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Login = () => {
-    const {signIn} = useContext(AuthContext)
+    const {signIn, googleLogin} = useContext(AuthContext)
     const handleLogin = event => {
         event.preventDefault()
         const form = event.target
@@ -17,6 +17,15 @@ const Login = () => {
             console.log(logUser);
         })
         .catch(error => {console.log(error);})
+    }
+
+    const googleLoged = () => {
+      googleLogin()
+      .then(result => {
+        const logedUser = result.user
+        console.log(logedUser);
+      })
+      .catch(error => {console.log(error);})
     }
     return (
         <div className=" min-h-screen flex items-center justify-center">
@@ -41,7 +50,9 @@ const Login = () => {
           />
         </div>
         <button className="w-full py-2 px-4 text-white rounded hover:bg-green-600 font-bold" type="submit">Login</button>
-        <button className="w-full py-2 px-4 bg-red-500 text-white rounded hover:bg-green-600 mt-5 font-bold" type="submit">Google</button>
+
+        <button onClick={googleLoged} className="w-full py-2 px-4 bg-red-500 text-white rounded hover:bg-green-600 mt-5 font-bold" type="submit">Google</button> 
+
         <h1 className='mt-5 text-white'>New user? <Link to='/registration' className='text-white  font-bold '>Registration</Link></h1>
       </form>
     </div>
