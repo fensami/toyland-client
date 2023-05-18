@@ -13,7 +13,7 @@
     },
     {
       "id": 3,
-      "image": "https://i.ytimg.com/vi/KNYBYE8HETY/maxresdefault.jpg",
+      "image": "https://i.ytimg.com/vi/xUy_mSWMEW4/maxresdefault.jpg",
       "title": "Title 3",
       "name": "Name 3"
     },
@@ -25,13 +25,13 @@
     },
     {
       "id": 5,
-      "image": "https://i.ytimg.com/vi/KNYBYE8HETY/maxresdefault.jpg",
+      "image": "https://static-01.daraz.com.bd/p/2990f16f18b263c0fb84a33b949f2ad5.jpg",
       "title": "Title 5",
       "name": "Name 5"
     },
     {
       "id": 6,
-      "image": "/path/to/image6.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcv3q8e2F3ByPUJC1JS2WD_e6jylbV5BnrdQ&usqp=CAU",
       "title": "Title 6",
       "name": "Name 6"
     },
@@ -43,7 +43,7 @@
     },
     {
       "id": 8,
-      "image": "/path/to/image8.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrl8HBdxkuH9rqbNHTCDa_RyXDaJ9hDiu_A&usqp=CAU",
       "title": "Title 8",
       "name": "Name 8"
     },
