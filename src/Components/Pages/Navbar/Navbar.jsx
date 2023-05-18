@@ -20,7 +20,9 @@ const Navbar = () => {
     </div>
     <img className='w-28' src={logomain} alt="" />
     {/* <a className="btn btn-ghost normal-case text-4xl font-bold">ToyLand</a> */}
-    <a className="btn btn-ghost normal-case text-4xl font-bold">ToyLand</a>
+    <div>
+    <p className="btn btn-ghost normal-case text-4xl font-bold">ToyLand</p>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="font-bold text-xl menu menu-horizontal px-1">
@@ -32,7 +34,7 @@ const Navbar = () => {
       <li><a>Blogs</a></li>
     </ul>
   </div>
-  <Link to='registration'>
+  <Link to='/login'>
   <button className="w-full py-2 px-4 bg-purple-500 text-white rounded hover:bg-purple-600" type="submit">Login</button>  
   </Link>
 </div>

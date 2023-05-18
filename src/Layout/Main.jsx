@@ -3,11 +3,13 @@ import { Outlet } from 'react-router-dom';
 import Home from '../Components/Home/Home/Home';
 import Navbar from '../Components/Pages/Navbar/Navbar';
 import Footer from '../Components/Pages/Footer/Footer';
+import Banner from '../Components/Home/banner/Banner';
 
 const Main = () => {
     return (
-        <div>
+        <div >
             <Navbar></Navbar>
+           
              <Outlet></Outlet>
              <Footer></Footer>
         </div>
