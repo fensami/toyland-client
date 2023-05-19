@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logomain from '../../../assets/logomain1.png'
 import { AuthContext } from '../../../Providers/AuthProvider';
+import { FaBeer, FaHome } from 'react-icons/fa';
+
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -39,8 +41,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-center  hidden lg:flex">
         <ul className="font-bold text-xl menu menu-horizontal px-1">
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/allToys'>All Toys</Link></li>
+          <li><Link to='/'><FaHome /> Home</Link></li>
+          <li><Link to='/allToys'> All Toys</Link></li>
 
           {
             user && <>
@@ -63,6 +65,11 @@ const Navbar = () => {
             <Link to='/login'><button className="w-full py-2 px-4 text-white rounded hover:bg-[#0a2d26]" type="submit">Login</button>
             </Link>
         }
+        <div>
+          {
+            user && <img className='w-12 rounded-full' src={user.photoURL} alt="" />
+          }
+        </div>
       </div>
 
 

@@ -6,12 +6,12 @@ const AllToy = ({allToy}) => {
 
     return (
         <tr>
-        <th>{sellerName}</th> 
+        <td>{sellerName}</td> 
         <td>{name}</td> 
         <td>{subCategory}</td> 
         <td>{price}</td> 
         <td>{availableQuantity}</td> 
-        <button>View Details</button> 
+        <td>View Details</td> 
         {/* <td>12/16/2020</td>  */}
         {/* <td>Blue</td> */}
       </tr>
