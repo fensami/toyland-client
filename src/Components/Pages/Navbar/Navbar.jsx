@@ -24,10 +24,10 @@ const Navbar = () => {
             <li><Link to='/allToys'>All Toys</Link></li>
             {
               user && <>
-                
-                  <li><a>My Toys</a></li>
-                  <li><Link to='/addToys'>Add A Toys</Link></li>
-               
+                <li><Link to='/addToys'>Add A Toys</Link></li>
+
+                <li><Link to='/myToys'>My Toys</Link></li>
+
               </>
             }
             <li><a>Blogs</a></li>
@@ -46,10 +46,10 @@ const Navbar = () => {
 
           {
             user && <>
-              
-                <li><a>My Toys</a></li>
-                <li><Link to='/addToys'>Add A Toys</Link></li>
-              
+              <li><Link to='/addToys'>Add A Toys</Link></li>
+
+              <li><Link to='/myToys'>My Toys</Link></li>
+
             </>
           }
           <li><Link to='/blogs'>Blogs</Link></li>
@@ -60,9 +60,9 @@ const Navbar = () => {
   </Link> */}
       <div>
         {
-          user ?
-            <Link><button className="w-full py-2 px-4 text-white rounded hover:bg-[#0a2d26]" onClick={handleLogout} type="submit">LogOut</button></Link> :
-            <Link to='/login'><button className="w-full py-2 px-4 text-white rounded hover:bg-[#0a2d26]" type="submit">Login</button>
+          user?.email?
+            <Link><button className="w-full py-2 px-4 text-white rounded hover:bg-[#0a2d26] font-bold" onClick={handleLogout} type="submit">LogOut</button></Link> :
+            <Link to='/login'><button className="w-full py-2 px-4 text-white rounded hover:bg-[#0a2d26] font-bold" type="submit">Login</button>
             </Link>
         }
         <div>

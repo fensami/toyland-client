@@ -6,7 +6,7 @@ const Banner = () => {
       <div className='bg-dark'>
         <div className="relative">
         <img
-          className="mx-auto w-full"
+          className="mx-auto w-full "
           src="https://media.istockphoto.com/id/182704582/photo/horserace-toys-in-a-funfair.jpg?b=1&s=170667a&w=0&k=20&c=xqrjrdgvgQS1MT6ZPZH662vT4DWVy4SUMPH51Z82wXc="
           alt="Banner Image"
         />
