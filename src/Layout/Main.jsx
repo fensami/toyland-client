@@ -8,7 +8,7 @@ import Banner from '../Components/Home/banner/Banner';
 const Main = () => {
     return (
         <div >
-            <Navbar></Navbar>
+            <Navbar ></Navbar>
            
              <Outlet></Outlet>
              <Footer></Footer>

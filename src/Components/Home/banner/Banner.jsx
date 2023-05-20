@@ -13,11 +13,11 @@ const Banner = () => {
         </div>
         
        <div className='absolute top-52 left-0 text-white'>
-       <p className=" text-6xl font-bold   px-4 py-2">
+       <p className=" text-[#30574e] text-6xl font-bold   px-4 py-2">
           Welcome to ToyLand
           <small className='text-3xl font-bold'>Pats</small>
         </p>
-        <h1 className='text-white ml-4 mt-5 text-4xl font-semibold w-1/2'>A Magical World of Imagination, Adventure, and Endless Play for Kids of All Ages!</h1>
+        <h1 className='text-[#354f4a] ml-4 mt-5 text-4xl font-semibold w-1/2'>A Magical World of Imagination, Adventure, and Endless Play for Kids of All Ages!</h1>
        </div>
       
         

@@ -1,18 +1,20 @@
 import React from 'react';
-import { FaBeer, FaTrash } from 'react-icons/fa';
+import { FaBeer, FaEdit, FaTrash } from 'react-icons/fa';
+import { BiEdit } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 
+
 const MyToy = ({myToy, handleDelete}) => {
-    const {name, _id} = myToy;
+    const {name, _id,price} = myToy;
 
     return (
         <tr>
         <th></th>
         <td>{name}</td>
-        <td>Quality Control Specialist</td>
-        <td><Link to={`/updateToys/${_id}`}>Update</Link></td>
-        <td onClick={() =>handleDelete(_id)}><FaTrash /></td>
+        <td>{price}</td>
+        <td className='font-bold '><Link to={`/updateToys/${_id}`}> <BiEdit className='w-12 ' style={{fontSize: '2rem'}}></BiEdit></Link></td>
+        <td className='text-red-500' onClick={() =>handleDelete(_id)}><FaTrash className='w-12 ' style={{fontSize: '1.5rem'}} /></td>
 
         {/* <Link to={`updateCoffee/${_id}`}>
                         <button className="btn">Edit</button>

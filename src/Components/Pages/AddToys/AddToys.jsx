@@ -38,7 +38,9 @@ const AddToys = () => {
             body: JSON.stringify(addToys)
         })
         .then(res => res.json())
-        .then(data => {console.log(data);})
+        .then(data => {console.log(data);
+        alert('added toys')
+        })
     }
     return (
         <div className="w-1/2  bg-[#1e4a41] my-12 rounded-lg mx-auto px-4 py-8">

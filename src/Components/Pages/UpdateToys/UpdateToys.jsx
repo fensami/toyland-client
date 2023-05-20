@@ -72,7 +72,7 @@ const UpdateToys = () => {
                         defaultValue={detailsDescription}
                     />
                 </div>
-                <button className="btn btn-outline btn-accent">Add Toys</button>
+                <button className="btn btn-outline btn-accent">Update Toys</button>
             </form>
         </div>
     );

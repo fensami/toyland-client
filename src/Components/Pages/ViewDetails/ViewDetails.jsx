@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const ViewDetails = () => {
     const data = useLoaderData();
-    const {_id, name,sellerName,sellerEmail,subCategory,availableQuantity, price, photoUrl} =data;
+    const {_id, name,sellerName,sellerEmail,detailsDescription,subCategory,availableQuantity, price, photoUrl, rating} =data;
 
     //picture, toy name, seller name, seller email, price, rating, available quantity, and detail description
     return (
@@ -16,9 +16,9 @@ const ViewDetails = () => {
           <p className="text-gray-200 mb-2">Seller Name: {sellerName}</p>
           <p className="text-gray-200 mb-2">Seller Email: {sellerEmail}</p>
           <p className="text-gray-200 mb-2">Price: {price}</p>
-          <p className="text-gray-200 mb-2">Rating: 4.5</p>
-          <p className="text-gray-200 mb-2">Available Quantity: 10</p>
-          <p className="text-gray-200 mb-2">Description: This is a fantastic toy with lots of features!</p>
+          <p className="text-gray-200 mb-2">Rating: {rating}</p>
+          <p className="text-gray-200 mb-2">Available Quantity: {availableQuantity}</p>
+          <p className="text-gray-200 mb-2">Description: {detailsDescription}</p>
         </div>
       </div>
     );
