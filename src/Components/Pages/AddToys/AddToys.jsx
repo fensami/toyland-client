@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../../Providers/AuthProvider';
 
 const AddToys = () => {
+    // const {user} = useContext(AuthContext)
+    // console.log(user.email);
     const handleAddToys = event => {
         event.preventDefault()
         const form = event.target;
@@ -36,14 +39,6 @@ const AddToys = () => {
         })
         .then(res => res.json())
         .then(data => {console.log(data);})
-
-
-
-
-
-
-
-
     }
     return (
         <div className="w-1/2  bg-[#1e4a41] my-12 rounded-lg mx-auto px-4 py-8">
@@ -58,7 +53,6 @@ const AddToys = () => {
                         type="text"
                         name='photoUrl'
                         placeholder='Picture Url'
-                    // onChange={(event) => setPictureUrl(event.target.value)}
                     />
                 </div>
 
@@ -71,7 +65,6 @@ const AddToys = () => {
                         type="text"
                         name='name'
                         placeholder='Name'
-                    // onChange={(event) => setName(event.target.value)}
                     />
                 </div>
 
@@ -84,8 +77,8 @@ const AddToys = () => {
                         type="text"
                         placeholder='Seller Name'
                         name='sellerName'
-                    // value={sellerName}
-                    // onChange={(event) => setSellerName(event.target.value)}
+                       
+                
                     />
                 </div>
 
@@ -98,6 +91,8 @@ const AddToys = () => {
                         type="email"
                         name='sellerEmail'
                         placeholder='Seller Email'
+                        // value={user.email}
+                        // value={email || user}
                     // onChange={(event) => setSellerEmail(event.target.value)}
                     />
                 </div>

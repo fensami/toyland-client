@@ -10,8 +10,8 @@ const {name, _id} = allToys
 
     return (
         <div className="overflow-x-auto">
-  <table className="table table-compact w-full">
-    <thead>
+  <table className="table table-compact  w-2/3 my-12 border mx-auto">
+    <thead >
       <tr>
         <th>Seller Name</th> 
         <th>Toy Name</th> 
@@ -23,7 +23,7 @@ const {name, _id} = allToys
         {/* <th>Favorite Color</th> */}
       </tr>
     </thead> 
-    <tbody>
+    <tbody >
     {
         allToys.map((allToy, index) => <AllToy
         key={index}
