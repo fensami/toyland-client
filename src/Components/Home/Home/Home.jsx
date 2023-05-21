@@ -5,8 +5,10 @@ import TabsItems from '../tabs/TabsItems';
 import CowKidsToys from '../CowKidsToys/CowKidsToys';
 
 import Aos from '../Aos/Aos'
+import useTitle from '../../../Hooks/useTitles';
 
 const Home = () => {
+    useTitle('home')
     const [gallerys, setGallerys] = useState([]);
 
     useEffect(() => {
@@ -21,7 +23,7 @@ const Home = () => {
             <Banner></Banner>
 
             <h1 className='text-center font-bold lg:text-5xl text-[#38776a] my-10'>Toyland Animals</h1>
-                <div className='w-1/2 mx-auto grid grid-cols-1  lg:grid-cols-3'>
+                <div className='lg:w-1/2 w-2/3 mx-auto grid grid-cols-1  lg:grid-cols-3'>
 
                 
                 {

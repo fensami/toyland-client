@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
+import useTitle from '../../../Hooks/useTitles';
 
 const Login = () => {
     const {signIn, googleLogin} = useContext(AuthContext);
     const location = useLocation()
     const navigate = useNavigate()
+    useTitle('login')
     const from = location.state?.from?.pathname || '/'
     const handleLogin = event => {
         event.preventDefault()
