@@ -2,10 +2,10 @@ import React from 'react';
 
 const CowKidsToys = () => {
     return (
-        <div className='bg-[#38776a] my-5'>
+        <div className='bg-[#38776a] py-12 mt-5'>
             <h1 className='font-extrabold text-white text-4xl pt-8 text-center'>Cow Baby Toys</h1>
             <div className="h-96 w-1/2 ml-96 pl-24 mt-12 carousel carousel-vertical rounded-box">
-        <div className="carousel-item h-full">
+        <div className="carousel-item br h-full">
           <img src="https://i5.walmartimages.com/asr/002627a6-af5d-4eee-970a-f6b167fcf629.bf7c4c327062202dbdf36bdfa3ace5f1.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" />
         </div> 
         <div className="carousel-item h-full">

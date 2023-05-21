@@ -20,7 +20,9 @@ const Login = () => {
             console.log(logUser);
             navigate(from)
         })
-        .catch(error => {console.log(error);})
+        .catch(error => {
+          console.log(error);
+        })
     }
 
     const googleLoged = () => {

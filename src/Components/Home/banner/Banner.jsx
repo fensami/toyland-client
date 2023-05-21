@@ -6,8 +6,8 @@ const Banner = () => {
       <div className='bg-dark'>
         <div className="relative">
         <img
-          className="mx-auto w-full "
-          src="https://media.istockphoto.com/id/182704582/photo/horserace-toys-in-a-funfair.jpg?b=1&s=170667a&w=0&k=20&c=xqrjrdgvgQS1MT6ZPZH662vT4DWVy4SUMPH51Z82wXc="
+          className="mx-auto h-auto w-full "
+          src="https://i.pinimg.com/originals/bd/85/6b/bd856b72071c01f6adf5338dd40192f5.jpg"
           alt="Banner Image"
         />
         </div>
@@ -17,7 +17,7 @@ const Banner = () => {
           Welcome to ToyLand
           <small className='text-3xl font-bold'>Pats</small>
         </p>
-        <h1 className='text-[#354f4a] ml-4 mt-5 text-4xl font-semibold w-1/2'>A Magical World of Imagination, Adventure, and Endless Play for Kids of All Ages!</h1>
+        <h1 className='text-[#0f0e0e] ml-4 mt-5 text-4xl font-semibold w-1/2'>A Magical World of Imagination, Adventure, and Endless Play for Kids of All Ages!</h1>
        </div>
       
         

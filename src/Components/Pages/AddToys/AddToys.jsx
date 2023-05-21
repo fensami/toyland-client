@@ -118,10 +118,10 @@ const AddToys = () => {
                     >
                         <>
                             <option value="">Select a sub-category</option>
-                            <option value="Math Toys">Math Toys</option>
-                            <option value="Language Toys">Language Toys</option>
-                            <option value="Science Toys">Science Toys</option>
-                            <option value="Science Toys">Electronic Toys</option>
+                            <option value="Math Toys">Mammals</option>
+                            <option value="Language Toys">Birds</option>
+                            <option value="Science Toys">Fish</option>
+                            <option value="Science Toys">Invertebrates</option>
                         </>
                     </select>
                 </div>

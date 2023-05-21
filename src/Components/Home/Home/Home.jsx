@@ -5,6 +5,8 @@ import Gallery from '../../Pages/gallery/Gallery';
 import TabsItems from '../tabs/TabsItems';
 import CowKidsToys from '../CowKidsToys/CowKidsToys';
 
+import Aos from '../Aos/Aos'
+
 const Home = () => {
     const [gallerys, setGallerys] = useState([]);
 
@@ -18,9 +20,10 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            
+                        {/* <Aos></Aos> */}
+
             <h1 className='text-center font-bold text-5xl text-[#38776a] my-10'>Toyland Animals</h1>
-                <div className='grid grid-cols-1  lg:grid-cols-4 gap-5 px-auto'>
+                <div className='w-1/2 mx-auto grid grid-cols-1  lg:grid-cols-3'>
 
                 
                 {
@@ -33,8 +36,12 @@ const Home = () => {
                 </div>
                 {/* <Gallery></Gallery> */}
 
+                {/* <Aos></Aos> */}
+
+
                 <TabsItems></TabsItems>
                 <CowKidsToys></CowKidsToys>
+                <Aos></Aos>
         
 
             

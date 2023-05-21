@@ -1,0 +1,22 @@
+[
+    
+        {
+            "id": "1",
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQ0RlleUZuYZONTH0D7cccpdGTNelINk1Zw&usqp=CAU",
+            "name": "Product 1",
+            "price": "$50",
+            "rating": 4.5,
+            "ratings": 120
+          },
+          {
+            "id": "2",
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_Yz0vpP4uNNrTc2XzcX1KH3nmkrOG2hB1w&usqp=CAU",
+            "name": "Product 2",
+            "price": "$70",
+            "rating": 4.8,
+            "ratings": 85
+          }
+
+    
+  ]
+  

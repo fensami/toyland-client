@@ -1,0 +1,21 @@
+[
+    
+    {
+        "id": "1",
+        "picture": "https://c1.wallpaperflare.com/preview/345/625/78/bird-birdie-plush-stuffed-animal.jpg",
+        "name": "Product 1",
+        "price": "$50",
+        "rating": 4.5,
+        "ratings": 120
+      },
+      {
+        "id": "2",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZYMhYDWsePocw5wqH_z9Ry60sJ00pHIm7g&usqp=CAU",
+        "name": "Product 2",
+        "price": "$70",
+        "rating": 4.8,
+        "ratings": 85
+      }
+
+
+]
