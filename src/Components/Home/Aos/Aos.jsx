@@ -14,6 +14,7 @@ function Aos() {
 
   return (
     <section className="aos-section">
+      <h1 className='text-5xl font-bold text-center my-5 text-[#38776a]'>Up comming New Toys</h1>
       <div className="flex justify-center items-center">
         <div
           className="image-container mx-2 p-4"
