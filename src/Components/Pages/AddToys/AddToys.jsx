@@ -114,10 +114,10 @@ const AddToys = () => {
                     >
                         <>
                             <option value="">Select a sub-category</option>
-                            <option value="Math Toys">Mammals</option>
-                            <option value="Language Toys">Birds</option>
-                            <option value="Science Toys">Fish</option>
-                            <option value="Science Toys">Invertebrates</option>
+                            <option value="Mammals">Mammals</option>
+                            <option value="Birds">Birds</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Invertebrates">Invertebrates</option>
                         </>
                     </select>
                 </div>
