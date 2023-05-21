@@ -1,5 +1,6 @@
 import React from 'react';
-import { json, useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const UpdateToys = () => {
     const myToys = useLoaderData();
@@ -14,7 +15,6 @@ const UpdateToys = () => {
         const detailsDescription = form.detailsDescription.value;
 
         const updataToy = {price, availableQuantity, detailsDescription}
-        console.log(updataToy);
 
         fetch(`https://toyland-server-weld.vercel.app/allToys/${_id}`, {
             method: 'PUT',
@@ -27,7 +27,13 @@ const UpdateToys = () => {
         .then(data => {
             console.log(data);
             if(data.modifiedCount > 0){
-                alert('updated')
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your update successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
             }
         })
 
@@ -45,7 +51,8 @@ const UpdateToys = () => {
                         type="number"
                         name='price'
                         defaultValue={price}
-                        placeholder='Price' 
+                        placeholder='Price'
+                        required
                     />
                 </div>
                 <div className="mb-4">
@@ -58,6 +65,7 @@ const UpdateToys = () => {
                         name='availableQuantity'
                         placeholder='Available Quantity'
                         defaultValue={availableQuantity}
+                        required
                     />
                 </div>
                 <div className="mb-4">
@@ -70,6 +78,7 @@ const UpdateToys = () => {
                         name='detailsDescription'
                         placeholder='Details Description'
                         defaultValue={detailsDescription}
+                        required
                     />
                 </div>
                 <button className="btn btn-outline btn-accent">Update Toys</button>

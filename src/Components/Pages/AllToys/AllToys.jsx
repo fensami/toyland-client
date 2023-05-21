@@ -3,9 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import AllToy from './AllToy';
 
 const AllToys = () => {
-//    const [allToys , setAll]
 const allToys = useLoaderData();
-// const {name, _id} = allToys
 
 
     return (
@@ -19,8 +17,6 @@ const allToys = useLoaderData();
         <th>Price</th> 
         <th>Available Quantity</th> 
         <th>view Details</th> 
-        {/* <th>Last Login</th>  */}
-        {/* <th>Favorite Color</th> */}
       </tr>
     </thead> 
     <tbody >

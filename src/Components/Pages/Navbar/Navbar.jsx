@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logomain from '../../../assets/logomain1.png'
 import { AuthContext } from '../../../Providers/AuthProvider';
-import { FaBeer, FaHome } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -34,9 +34,8 @@ const Navbar = () => {
           </ul>
         </div>
         <img className='w-28' src={logomain} alt="" />
-        {/* <a className="btn btn-ghost normal-case text-4xl font-bold">ToyLand</a> */}
         <div>
-          <p className="btn btn-ghost normal-case text-4xl font-bold">ToyLand</p>
+          <p className="btn btn-ghost normal-case lg:text-4xl font-bold">ToyLand</p>
         </div>
       </div>
       <div className="navbar-center  hidden lg:flex">
@@ -55,9 +54,6 @@ const Navbar = () => {
           <li><Link to='/blogs'>Blogs</Link></li>
         </ul>
       </div>
-      {/* <Link to='/login'>
-  <button className="w-full py-2 px-4 text-white rounded hover:bg-[#0a2d26]" type="submit">Login</button>  
-  </Link> */}
       <div>
         {
           user?.email?

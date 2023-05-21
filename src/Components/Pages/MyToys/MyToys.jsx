@@ -1,14 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
-// import { useNavigate } from 'react-router-dom';
 import MyToy from './MyToy';
 import Swal from 'sweetalert2';
 
 const MyToys = () => {
     const {user} = useContext(AuthContext)
     const [myToys , setMyToys] = useState([]);
-    // const {_id} = myToys;
-    // const navigate = useNavigate();
+   
     const url = `https://toyland-server-weld.vercel.app/allToys?sellerEmail=${user?.email}`
 
     useEffect(() => {
@@ -19,7 +17,7 @@ const MyToys = () => {
 
     //delete
     const handleDelete = id => {
-        const proceed = Swal.fire({
+          Swal.fire({
           title: 'Are you sure?',
           text: "You want to delete your toy",
           icon: 'warning',
@@ -46,9 +44,6 @@ const MyToys = () => {
             })
           }
         })
-        // if(proceed){
-            
-        // }
     }
 
    
@@ -56,13 +51,16 @@ const MyToys = () => {
     return (
         <div>
             <h1 className='text-center text-5xl font-bold my-8 text-[#306d61]'>My Toys</h1>
-            <div className="overflow-x-auto w-1/2 mx-auto">
+            <div className="overflow-x-auto w-2/3 mx-auto">
   <table className="table table-zebra w-full">
-    {/* head */}
     <thead>
       <tr>
-        <th></th>
+        <th>Images</th>
         <th>Name</th>
+        <th>Saller Name</th>
+        <th>subCategory</th>
+        <th>availableQuantity</th>
+
         <th>Price</th>
         <th>Update</th>
         <th>Delete</th>

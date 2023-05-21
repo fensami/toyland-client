@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Login = () => {
@@ -12,7 +12,6 @@ const Login = () => {
         const form = event.target
         const email = form.email.value;
         const password =form.password.value;
-        console.log(email, password);
 
         signIn(email, password)
         .then(result => {

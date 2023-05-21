@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Banner from '../banner/Banner';
 import Gallery from '../../Pages/gallery/Gallery';
-// import Tabs from '../Tabs/Tabs';
 import TabsItems from '../tabs/TabsItems';
 import CowKidsToys from '../CowKidsToys/CowKidsToys';
 
@@ -20,9 +19,8 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-                        {/* <Aos></Aos> */}
 
-            <h1 className='text-center font-bold text-5xl text-[#38776a] my-10'>Toyland Animals</h1>
+            <h1 className='text-center font-bold lg:text-5xl text-[#38776a] my-10'>Toyland Animals</h1>
                 <div className='w-1/2 mx-auto grid grid-cols-1  lg:grid-cols-3'>
 
                 
@@ -34,13 +32,12 @@ const Home = () => {
                 }
             
                 </div>
-                {/* <Gallery></Gallery> */}
-
-                {/* <Aos></Aos> */}
 
 
                 <TabsItems></TabsItems>
+                <div>
                 <CowKidsToys></CowKidsToys>
+                </div>
                 <Aos></Aos>
         
 

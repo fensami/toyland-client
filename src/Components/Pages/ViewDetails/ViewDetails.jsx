@@ -5,7 +5,6 @@ const ViewDetails = () => {
     const data = useLoaderData();
     const {_id, name,sellerName,sellerEmail,detailsDescription,subCategory,availableQuantity, price, photoUrl, rating} =data;
 
-    //picture, toy name, seller name, seller email, price, rating, available quantity, and detail description
     return (
         <div className="max-w-md mx-auto my-12 border  bg-[#38776a] ` shadow-lg rounded-lg overflow-hidden">
         <img className="w-1/2 mx-auto p-4 h-56" src={photoUrl} alt="" />

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
-// import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Registration = () => {
 
@@ -22,7 +21,6 @@ const Registration = () => {
           const loginUser = result.user;
           console.log(loginUser);
           navigate(from, {replace: true})
-          // navigate(from, { replace: true })
 
         })
         .catch(error => {console.log(error)})

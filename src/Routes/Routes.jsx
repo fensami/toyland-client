@@ -11,7 +11,6 @@ import MyToys from "../Components/Pages/MyToys/MyToys";
 import PrivateRoute from "./PrivateRoute";
 import UpdateToys from "../Components/Pages/UpdateToys/UpdateToys";
 import ViewDetails from "../Components/Pages/ViewDetails/ViewDetails";
-// import UpdateToys from "../Components/Pages/UpdateToys/UpdateToys";
 
 const router = createBrowserRouter([
     {
@@ -49,7 +48,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'updateToys/:id',
-                element: <UpdateToys></UpdateToys>,
+                element:<PrivateRoute><UpdateToys></UpdateToys></PrivateRoute>,
                 loader: ({params}) => fetch(`https://toyland-server-weld.vercel.app/allToys/${params.id}`)
             },
             {

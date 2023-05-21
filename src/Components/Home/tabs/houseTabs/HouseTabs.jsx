@@ -2,7 +2,6 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 const HouseTabs = ({hourse}) => {
-  // console.log(tab1);
   const {rating, price,name, picture} = hourse
     return (
       <div className="card w-96 mx-auto bg-base-100 shadow-xl">

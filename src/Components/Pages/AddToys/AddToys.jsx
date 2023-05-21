@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../../../Providers/AuthProvider';
+import React from 'react';
 import Swal from 'sweetalert2';
 
 const AddToys = () => {
-    // const {user} = useContext(AuthContext)
-    // console.log(user.email);
+   
     const handleAddToys = event => {
         event.preventDefault()
         const form = event.target;
@@ -62,6 +60,7 @@ const AddToys = () => {
                         type="text"
                         name='photoUrl'
                         placeholder='Picture Url'
+                        required
                     />
                 </div>
 
@@ -74,6 +73,7 @@ const AddToys = () => {
                         type="text"
                         name='name'
                         placeholder='Name'
+                        required
                     />
                 </div>
 
@@ -86,8 +86,7 @@ const AddToys = () => {
                         type="text"
                         placeholder='Seller Name'
                         name='sellerName'
-                       
-                
+                        required
                     />
                 </div>
 
@@ -100,9 +99,8 @@ const AddToys = () => {
                         type="email"
                         name='sellerEmail'
                         placeholder='Seller Email'
-                        // value={user.email}
-                        // value={email || user}
-                    // onChange={(event) => setSellerEmail(event.target.value)}
+                        required
+                        
                     />
                 </div>
 
@@ -113,8 +111,6 @@ const AddToys = () => {
                     <select
                         className="w-full border rounded py-2 px-3"
                         name='subCategory'
-                    // value={subCategory}
-                    // onChange={(event) => setSubCategory(event.target.value)}
                     >
                         <>
                             <option value="">Select a sub-category</option>
@@ -135,8 +131,8 @@ const AddToys = () => {
                         type="number"
                         name='price'
                         placeholder='Price'
-                    // value={price}
-                    // onChange={(event) => setPrice(event.target.value)}
+                        required
+                    
                     />
                 </div>
 
@@ -149,7 +145,8 @@ const AddToys = () => {
                         type="number"
                         name='rating'
                         placeholder='Rating'
-                    // onChange={(event) => setRating(event.target.value)}
+                        required
+                    
                     />
                 </div>
 
@@ -162,7 +159,7 @@ const AddToys = () => {
                         type="number"
                         name='availableQuantity'
                         placeholder='Available Quantity'
-                    // onChange={(event) => setQuantity(event.target.value)}
+                        required
                     />
                 </div>
 
@@ -175,7 +172,7 @@ const AddToys = () => {
                         type='text'
                         name='detailsDescription'
                         placeholder='Details Description'
-                    // onChange={(event) => setDescription(event.target.value)}
+                        required
                     />
                 </div>
 

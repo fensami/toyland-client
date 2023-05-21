@@ -33,7 +33,6 @@ const Footer = () => {
 
 
                 <Link to='https://github.com/fensami' className="link link-hover mt-5 ml-4"><BsGithub style={{fontSize: '1.8rem'}}></BsGithub></Link>
-                {/* <a className="link link-hover">Cookie policy</a> */}
             </div>
            
         </footer>
