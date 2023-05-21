@@ -41,7 +41,7 @@ const router = createBrowserRouter([
             {
                 path: 'allToys',
                 element: <AllToys></AllToys>,
-                loader: () => fetch('http://localhost:5000/allToys')
+                loader: () => fetch('https://toyland-server-weld.vercel.app/allToys')
             },
             {
                 path: 'myToys',
@@ -50,12 +50,12 @@ const router = createBrowserRouter([
             {
                 path: 'updateToys/:id',
                 element: <UpdateToys></UpdateToys>,
-                loader: ({params}) => fetch(`http://localhost:5000/allToys/${params.id}`)
+                loader: ({params}) => fetch(`https://toyland-server-weld.vercel.app/allToys/${params.id}`)
             },
             {
                 path: 'viewDetails/:id',
                 element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/allToys/${params.id}`)
+                loader: ({params}) => fetch(`https://toyland-server-weld.vercel.app/allToys/${params.id}`)
             }
         ]
     },

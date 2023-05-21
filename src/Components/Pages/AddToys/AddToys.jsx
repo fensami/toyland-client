@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AddToys = () => {
     // const {user} = useContext(AuthContext)
@@ -30,7 +31,7 @@ const AddToys = () => {
             detailsDescription
 
         }
-        fetch('http://localhost:5000/allToys', {
+        fetch('https://toyland-server-weld.vercel.app/allToys', {
             method: "POST", 
             headers: {
                 'content-type' : 'application/json'
@@ -39,7 +40,13 @@ const AddToys = () => {
         })
         .then(res => res.json())
         .then(data => {console.log(data);
-        alert('added toys')
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Successfully added your toy',
+                showConfirmButton: false,
+                timer: 1500
+              })
         })
     }
     return (

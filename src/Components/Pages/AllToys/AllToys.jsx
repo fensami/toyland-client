@@ -5,7 +5,7 @@ import AllToy from './AllToy';
 const AllToys = () => {
 //    const [allToys , setAll]
 const allToys = useLoaderData();
-const {name, _id} = allToys
+// const {name, _id} = allToys
 
 
     return (

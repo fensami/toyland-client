@@ -1,14 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import MyToy from './MyToy';
+import Swal from 'sweetalert2';
 
 const MyToys = () => {
     const {user} = useContext(AuthContext)
     const [myToys , setMyToys] = useState([]);
     // const {_id} = myToys;
     // const navigate = useNavigate();
-    const url = `http://localhost:5000/allToys?sellerEmail=${user?.email}`
+    const url = `https://toyland-server-weld.vercel.app/allToys?sellerEmail=${user?.email}`
 
     useEffect(() => {
         fetch(url)
@@ -18,19 +19,36 @@ const MyToys = () => {
 
     //delete
     const handleDelete = id => {
-        const proceed = confirm('are you sure you want to delete');
-        if(proceed){
-            fetch(`http://localhost:5000/allToys/${id}`,{
+        const proceed = Swal.fire({
+          title: 'Are you sure?',
+          text: "You want to delete your toy",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+
+            fetch(`https://toyland-server-weld.vercel.app/allToys/${id}`,{
                 method: 'DELETE'
             })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+               console.log(data);
                 if(data.deletedCount >0){
-                    alert('deleted successful')
+                  Swal.fire(
+                    'Deleted!',
+                    'Your toy has been deleted.',
+                    'success'
+                  )
                 }
             })
-        }
+          }
+        })
+        // if(proceed){
+            
+        // }
     }
 
    

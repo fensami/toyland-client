@@ -16,7 +16,7 @@ const UpdateToys = () => {
         const updataToy = {price, availableQuantity, detailsDescription}
         console.log(updataToy);
 
-        fetch(`http://localhost:5000/allToys/${_id}`, {
+        fetch(`https://toyland-server-weld.vercel.app/allToys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type' : 'application/json'

@@ -20,7 +20,7 @@ const Home = () => {
             <Banner></Banner>
             
             <h1 className='text-center font-bold text-5xl text-[#38776a] my-10'>Toyland Animals</h1>
-                <div className='grid  lg:grid-cols-3 gap-5  w-1/2 mx-auto'>
+                <div className='grid grid-cols-1  lg:grid-cols-4 gap-5 px-auto'>
 
                 
                 {
@@ -31,6 +31,7 @@ const Home = () => {
                 }
             
                 </div>
+                {/* <Gallery></Gallery> */}
 
                 <TabsItems></TabsItems>
                 <CowKidsToys></CowKidsToys>
